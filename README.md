@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a project aming to build a CLI tool for data engineering with AWS Athena. The dataset is information of NBA players from 1996 to 2021 season.
+This is a project aiming to build a CLI tool for data engineering with AWS Athena. The dataset is information of NBA players from 1996 to 2021 season.
 
 ## Steps
 
