@@ -2,13 +2,12 @@
 
 ## Description
 
-This is a project aming to build a CLI tool for data engineering with AWS Athena. The dataset is information of NBA players from 1996 to 2021 season.
+This is a project aming to build a tool for data engineering with AWS SageMaker. The dataset is information of NBA players from 1996 to 2021 season.
 
 ## Steps
 
 1. Clean the data and upload it to AWS S3.
-2. Create a database in AWS Athena.
-3. Use the CLI tool to query the data.
+2. Use AWS SageMaker to process the data.
 
 ## Columns of the dataset
 
@@ -35,6 +34,39 @@ player_name	team_abbreviation	age	player_height	player_weight	college	country	dr
 - ts_pct: Measure of the player's shooting efficiency that takes into account free throws, 2 and 3 point shots
 - ast_pct: Percentage of teammate field goals the player assisted while he was on the floor
 - season: NBA season
+
+## Example
+
+1. Clean the data and upload it to AWS S3
+
+![s3_data](./img/s3.png)
+
+2. Use AWS SageMaker to process the data
+
+![sagemaker](./img/sagemaker.png)
+
+3. In the notebook, import necessary libraries and data
+
+![notebook](./img/basic_setup.png)
+
+The data looks like this:
+
+![data](./img/data.png)
+
+If we want to get LAC's data of points, rebounds and assists during different seasons:
+
+![lac](./img/lac.png)
+![lac_res](./img/lac_res.png)
+
+If we want to get data of season 2018-19
+
+![season18-19](img/season18-19.png)
+![season18-19_res](img/season18-19_res.png)
+
+If we want to get max of points, rebounds and assists of each seasons
+
+![max](img/max.png)
+![max_res](img/max_res.png)
 
 ## References
 
